@@ -25,3 +25,10 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 } */
+
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-3xl: 120rem;
+  /* 1920px at default 16px root */
+}
