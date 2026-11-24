@@ -38,3 +38,25 @@ body {
   --breakpoint-3xl: 120rem;
   /* 1920px at default 16px root */
 }
+
+
+.floating-field {
+  position: relative;
+}
+
+.floating-field .label {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  transition: all 0.2s ease;
+  pointer-events: none;
+}
+
+
+.floating-field:has(input:focus) .label,
+.floating-field:has(input:not(:placeholder-shown)) .label {
+  top: 20%;
+  transform: translateY((-50%));
+  font-size: 12px;
+}

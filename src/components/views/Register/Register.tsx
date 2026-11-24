@@ -28,22 +28,24 @@ const Register = () => {
           />
         </div>
 
-        <Card className="flex w-1/4 p-6 shadow-xl">
+        <Card className="flex w-1/4 rounded-2xl border border-slate-200 p-6 shadow-xl">
           <Card.Header>
             <Card.Title className="text-default text-2xl font-bold">
               Create Account
             </Card.Title>
             <Card.Description className="text-sm">
               Have an Account?&nbsp;
-              <Link href="/login">Click Here</Link>
+              <Link href="/login" className={"text-default"}>
+                Login Here
+              </Link>
             </Card.Description>
           </Card.Header>
           <Form>
             <Card.Content>
               <div className="flex flex-col gap-4">
-                <TextField name="email" type="email">
-                  <Label>Email</Label>
-                  <Input placeholder="email@example.com" />
+                <TextField name="text" type="text" className={"floating-field"}>
+                  <Label className="text-slate-500">Fullname</Label>
+                  <Input className={"p-4"} placeholder="" />
                 </TextField>
                 <TextField name="password" type="password">
                   <Label>Password</Label>
